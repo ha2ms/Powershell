@@ -14,7 +14,6 @@ Télecharger le script netscan.ps1 et placer le par exemple dans le C: sous un d
     <img src="http://93.90.205.194/github/netscan/netscan_location.png" />
 </p>
 
-```bash
-  npm install my-project
-  cd my-project
+```Powershell
+  Write-Host "Test" >> Test
 ```
