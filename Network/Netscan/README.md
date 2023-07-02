@@ -3,7 +3,7 @@
 Script qui affiche toutes les adresses IP connectées au réseau selon la plage qui lui est attribué
 
 <p align="center">
-    <img src="https://drive.google.com/file/d/12SRWZu4XDJMWi5dk-CBU-L-CeRg1nB_i/view" />
+    <img src="http://93.90.205.194/script_test.png" />
 </p>
 
 ## Installation
