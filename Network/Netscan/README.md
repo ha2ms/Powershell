@@ -9,7 +9,7 @@ Permet également de monitorer le réseau avec l'option -m et ainsi ajouter / en
 
 ## Installation
 
-Télecharger le script netscan.ps1 et placer par exemple dans le C: sous un dossier Script
+Télecharger le script netscan.ps1 et placer le par exemple dans le C: sous un dossier Script
 <p align="center">
     <img src="http://93.90.205.194/github/netscan/netscan_location.png" />
 </p>
