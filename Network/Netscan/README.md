@@ -4,7 +4,7 @@ Script qui affiche toutes les adresses IP connectées au réseau selon la plage 
 Permet également de monitorer le réseau avec l'option -m et ainsi ajouter / enlever automatiquement les IPs en direct en fonction de leurs disponibilités.
 
 <p align="center">
-    <img src="http://93.90.205.194/github/netscan/script_test.png" />
+    <img src="http://93.90.205.194/github/netscan/script_launched.png" />
 </p>
 
 ## Installation
