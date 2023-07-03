@@ -22,8 +22,9 @@ Ouvrez Powershell normalement (pas en mode administrateur) sinon le raccourci du
 ```Powershell
   "Set-Alias -Name 'netscan' -Value 'C:\Script\netscan.ps1'" >> $PROFILE
 ```
-Si vous obtenez une erreur, verifiez que les dossiers présents dans le chemin d'accès contenu dans la variable $PROFILE.
+Si vous obtenez une erreur, verifiez que les dossiers présents dans le chemin d'accès contenu dans la variable $PROFILE existent bien dans l'explorateur de fichier. Si ce n'est pas le cas, créer les dossiers manquants, (la création du fichier quant à lui ne sera pas nécessaire). Puis relancer la commande précédente.
+
 ```Powershell
   $PROFILE
 ```
-Sinon vous n'avez plus qu'à fermer réouvrir Powershell et de tester la commande netscan.
+Une fois terminé vous n'avez plus qu'à fermer puis réouvrir Powershell et de tester la commande netscan.
