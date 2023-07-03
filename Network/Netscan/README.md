@@ -9,11 +9,21 @@ Permet également de monitorer le réseau avec l'option -m et ainsi ajouter / en
 
 ## Installation
 
-Télecharger le script netscan.ps1 et placer le par exemple dans le C: sous un dossier Script
+Télechargez le script netscan.ps1 et placez-le par exemple dans le C: sous un dossier Script
 <p align="center">
     <img src="http://93.90.205.194/github/netscan/netscan_location.png" />
 </p>
 
+Ouvrez Powerhsell en mode administrateur, puis exécutez la commandes ci-dessous puis refermez-la.
 ```Powershell
-  Write-Host "Test" >> Test
+  Set-ExecutionPolicy Unrestricted
 ```
+Ouvrez Powershell normalement (pas en mode administrateur) sinon le raccourci du script ne sera accesible que dans la console administrateur.
+```Powershell
+  "Set-Alias -Name 'netscan' -Value 'C:\Script\netscan.ps1'" >> $PROFILE
+```
+Si vous obtenez une erreur, verifiez que les dossiers présents dans le chemin d'accès contenu dans la variable $PROFILE.
+```Powershell
+  $PROFILE
+```
+Sinon vous n'avez plus qu'à fermer réouvrir Powershell et de tester la commande netscan.
