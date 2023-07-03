@@ -18,7 +18,7 @@ Ouvrez Powerhsell en mode administrateur, puis exécutez la commandes ci-dessous
 ```Powershell
   Set-ExecutionPolicy Unrestricted
 ```
-Ouvrez Powershell normalement (pas en mode administrateur) sinon le raccourci du script ne sera accesible que dans la console administrateur.
+Ouvrez Powershell normalement (pas en mode administrateur) sinon le raccourci du script ne sera accesible que dans la console administrateur, puis exécutez cette commande.
 ```Powershell
   "Set-Alias -Name 'netscan' -Value 'C:\Script\netscan.ps1'" >> $PROFILE
 ```
