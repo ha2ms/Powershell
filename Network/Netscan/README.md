@@ -3,12 +3,7 @@
 Script qui affiche en temps réel toutes les adresses IP connectées au réseau selon la plage qui lui est attribué.
 Permet également de monitorer le réseau avec l'option -m et ainsi ajouter / enlever automatiquement les IPs en direct en fonction de leurs disponibilités.
 
-http://93.90.205.194/github/netscan/script.mp
-<p>
-    <video url="http://93.90.205.194/github/netscan/script.mp4">
-</p>
-
-
+https://github.com/ha2ms/Powershell/assets/134864738/e70a387f-477d-4332-b6a6-9160372ede82
 
 
 ## Installation
