@@ -73,7 +73,6 @@ while (1) {
         $dnsRes += [System.Net.Dns]::GetHostEntryAsync($ipt)
     }
 
-    #$hostnames = $dnsRes.Result.HostName | ForEach { if ($_ -eq $null) { "..." }; else { $_ } } ;
     $hostnames = @()
     foreach ($dr in $dnsRes) {
         $hn = $dr.Result.HostName
@@ -124,10 +123,3 @@ while (1) {
     Remove-Variable -Name "dnsREs"
     Remove-Variable -Name "hostnames"
 }
-
-<#
-foreach ($cnd in $connected) {
-    Write-Host $cnd;
-    Write-Host "----------------";
-}
-#>
