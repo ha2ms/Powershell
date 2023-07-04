@@ -11,7 +11,6 @@ $network = "$($network[0]).$($network[1]).$($network[2])"
 [int]$start = ($start -split "\.")[3];
 [int]$end = ($end -split '\.')[3];
 # Récupération du curseur console à sa position initiale
-$vendorApiUrl = "https://api.macvendors.com"
 $ips = "";
 $start_crs = $host.UI.RawUI.CursorPosition;
 $current_crs = $host.UI.RawUI.CursorPosition;
@@ -23,6 +22,7 @@ while (1) {
         $ping = (New-Object System.Net.NetworkInformation.Ping).SendPingAsync("$network.$cnt");
         $pings += $ping;
         $cnt++;
+	Start-Sleep -Milliseconds 1
     }
 
     # Analyse des réponses ICMP et ajout des Ping réuissi
@@ -80,13 +80,14 @@ while (1) {
         if (($hn -ne $null) -and ($hn.IndexOf(".") -ne -1)) { $hn = $hn.Substring(0, $hn.IndexOf(".")) }
         if ($hn -eq $null) { $hn = "..." }
         $hostnames += $hn
+	Start-Sleep -Milliseconds 1
     }
 
     # Gestion de l'affichage
     $ip_length = ($ips_tab | Measure-Object -Maximum -Property Length).Maximum
     $host_length = ($hostnames | Measure-Object -Maximum -Property Length).Maximum
     # Titres
-    $output =  "   Ip Connected      HostName`n ";
+    $output =  "`n   Ip Connected      HostName`n ";
     # Lignes du Haut
     $output += ("-" * ($ip_length + 3)) + " " + ("-" * ($host_length + 3)) + "`n"
     # Ip + Host + Constructeur
@@ -120,6 +121,8 @@ while (1) {
     Remove-Variable -Name "connected"
     Remove-Variable -Name "ips_tab"
     Remove-Variable -Name "output"
+    Remove-Variable -Name "dnsREs"
+    Remove-Variable -Name "hostnames"
 }
 
 <#
