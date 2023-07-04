@@ -14,7 +14,7 @@ Télechargez le script netscan.ps1 et placez-le par exemple dans le C: sous un d
     <img src="http://93.90.205.194/github/netscan/netscan_location.png" />
 </p>
 
-Ouvrez Powerhsell en mode administrateur, puis exécutez la commandes ci-dessous puis refermez-la.
+Ouvrez Powerhsell en mode administrateur, puis exécutez la commande ci-dessous puis refermez-la.
 ```Powershell
   Set-ExecutionPolicy Unrestricted
 ```
