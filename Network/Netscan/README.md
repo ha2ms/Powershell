@@ -5,6 +5,7 @@ Permet également de monitorer le réseau avec l'option -m et ainsi ajouter / en
 
 https://github.com/ha2ms/Powershell/assets/134864738/e70a387f-477d-4332-b6a6-9160372ede82
 
+(Fonctionne seulement sur le dernier octet, de 0 à 255) 
 
 ## Installation
 
