@@ -14,16 +14,19 @@ Télechargez le script netscan.ps1 et placez-le par exemple dans le C: sous un d
     <img src="http://93.90.205.194/github/netscan/netscan_location.png" />
 </p>
 
+### Activer l'exécution de script:
 Ouvrez Powerhsell en mode administrateur, puis exécutez la commande ci-dessous puis refermez-la.
 ```Powershell
   Set-ExecutionPolicy Unrestricted
 ```
+### Ajouter le raccourci "netscan" pour exécuter le script sur le terminal
 Ouvrez Powershell normalement (pas en mode administrateur) sinon le raccourci du script ne sera accesible que dans la console administrateur, puis exécutez cette commande.
 ```Powershell
   "Set-Alias -Name 'netscan' -Value 'C:\Script\netscan.ps1'" >> $PROFILE
 ```
 Si vous obtenez une erreur, verifiez que les dossiers présents dans le chemin d'accès contenu dans la variable $PROFILE existent bien dans l'explorateur de fichier. Si ce n'est pas le cas, créer les dossiers manquants, (la création du fichier quant à lui ne sera pas nécessaire). Puis relancer la commande précédente.
 
+### Afficher le chemin complet du PROFILE
 ```Powershell
   $PROFILE
 ```
