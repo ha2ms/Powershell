@@ -1,1 +1,3 @@
 #Disk Cloner with minimum Disk Space
+
+Plusieurs solutions 
